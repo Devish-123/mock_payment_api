@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/mock-payment",
+      "dest": "api/mock-payment.js"
+    },
+    {
+      "src": "/api/payApi",
+      "dest": "api/payApi.js"
+    }
+  ]
+}
