@@ -10,7 +10,7 @@ function getRequestData(req) {
   return {};
 }
 
-module.exports = function handler(req, res) {
+export default function handler(req, res) {
   if (!["GET", "POST"].includes(req.method)) {
     res.setHeader("Allow", ["GET", "POST"]);
     return res.status(405).json({
@@ -36,4 +36,4 @@ module.exports = function handler(req, res) {
     user_name: user,
     accessory: product
   });
-};
+}
