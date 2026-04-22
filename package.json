@@ -1,13 +1,4 @@
 {
-  "name": "acessories_api",
-  "version": "1.0.0",
-  "private": true,
-  "main": "api/payApi.js",
-  "scripts": {
-    "test": "node -e \"const handler=require('./api/payApi'); const req={method:'GET',query:{user:'demo',product:'case'}}; const res={status(code){this.statusCode=code;return this;},json(payload){console.log(JSON.stringify({statusCode:this.statusCode,payload},null,2));return payload;},setHeader(){}}; handler(req,res);\""
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "Mock payment API ready for Vercel deployment"
+  "name": "mock-payment-api",
+  "version": "1.0.0"
 }
